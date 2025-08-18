@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: #333;
+}
