@@ -1,42 +1,42 @@
 body {
     font-family: "Georgia", "Times New Roman", serif;
-    background-color: #faf9f3; /* soft parchment */
-    color: #2b2b2b;
+    background-color: #f8f4ec; /* warm parchment */
+    color: #2d1e0f;
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-/* Header box */
+/* Header */
 header {
     text-align: center;
     padding: 1rem;
-    border: 4px groove #556b2f; /* deep green frame */
-    background-color: #f5efe0;
+    border: 4px double #6e4b28; /* dark sepia frame */
+    background-color: #f3e8d3;
     margin-bottom: 2rem;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.15);
 }
 
 header h1 {
     margin: 0;
     font-size: 2.4em;
     font-family: "Garamond", serif;
-    color: #2f3b1f;
+    color: #3d2b1f;
 }
 
 header p {
     font-style: italic;
     margin-top: 0.5rem;
-    color: #444;
+    color: #5a4430;
 }
 
 /* Navigation bar */
 nav {
     text-align: center;
-    background-color: #e4dcc7;
+    background-color: #e9dbc7;
     padding: 0.7rem;
-    border: 3px inset #8b7d5c;
+    border: 3px ridge #7a5c3f;
     margin-bottom: 2rem;
     font-family: "Palatino Linotype", serif;
 }
@@ -44,7 +44,7 @@ nav {
 nav a {
     margin: 0 1rem;
     text-decoration: none;
-    color: #2f3b6d;
+    color: #4b2e1e;
     font-weight: bold;
 }
 
@@ -55,27 +55,27 @@ nav a:hover {
 
 /* Main content box */
 main {
-    background-color: #fefdf8;
-    border: 2px outset #b5a27a;
+    background-color: #fdfaf4;
+    border: 2px solid #a68b6a;
     padding: 1.5rem;
-    box-shadow: 6px 6px 10px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
 }
 
 h2 {
     font-family: "Garamond", serif;
-    color: #3a2e1e;
-    border-bottom: 2px dotted #999;
+    color: #3a2a1a;
+    border-bottom: 1px solid #c2a98a;
     padding-bottom: 0.3rem;
     margin-top: 1.5rem;
 }
 
 /* Links inside content */
 main a {
-    color: #5a381e;
+    color: #5a2f15;
     font-weight: bold;
 }
 
 main a:hover {
-    color: #7d2815;
+    color: #9c3d1e;
     text-decoration: underline;
 }
