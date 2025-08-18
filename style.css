@@ -1,33 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
+    font-family: "Times New Roman", serif;
+    background-color: #f9f7e8;
+    color: #2c2c2c;
+    max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
     line-height: 1.6;
-    background-color: #fdfdfd;
 }
 
+/* Page title */
 header {
     text-align: center;
+    padding: 1rem;
+    border: 4px double #444;
+    background-color: #e4dbc6;
     margin-bottom: 2rem;
+    box-shadow: 4px 4px #888;
 }
 
+/* Navigation bar */
 nav {
     text-align: center;
+    background-color: #c5d4e3;
+    padding: 0.8rem;
+    border: 3px groove #666;
     margin-bottom: 2rem;
 }
 
 nav a {
     margin: 0 1rem;
     text-decoration: none;
-    color: #0056b3;
+    color: #1b3d6d;
     font-weight: bold;
+    font-family: Georgia, serif;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: darkred;
+    text-decoration: underline wavy;
+}
+
+/* Content boxes */
+main {
+    background-color: #fffdf3;
+    border: 2px dashed #444;
+    padding: 1.5rem;
+    box-shadow: 6px 6px #aaa;
 }
 
 h1, h2 {
-    color: #333;
+    font-family: "Garamond", serif;
+    color: #222;
+    text-shadow: 1px 1px #bbb;
 }
