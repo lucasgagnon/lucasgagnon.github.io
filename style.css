@@ -1,6 +1,6 @@
 body {
     font-family: "Georgia", "Times New Roman", serif;
-    background-color: #fdfaf4;
+    background-color: #faf9f3; /* soft parchment */
     color: #2b2b2b;
     max-width: 900px;
     margin: 0 auto;
@@ -8,34 +8,35 @@ body {
     line-height: 1.6;
 }
 
-/* Page header */
+/* Header box */
 header {
     text-align: center;
     padding: 1rem;
-    border: 4px double #5b4636;
-    background-color: #f3ecdf;
+    border: 4px groove #556b2f; /* deep green frame */
+    background-color: #f5efe0;
     margin-bottom: 2rem;
-    box-shadow: 3px 3px 6px rgba(0,0,0,0.15);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.15);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.2em;
+    font-size: 2.4em;
     font-family: "Garamond", serif;
+    color: #2f3b1f;
 }
 
 header p {
     font-style: italic;
     margin-top: 0.5rem;
-    color: #4a3c2a;
+    color: #444;
 }
 
 /* Navigation bar */
 nav {
     text-align: center;
-    background-color: #e6daca;
+    background-color: #e4dcc7;
     padding: 0.7rem;
-    border: 2px solid #8b6f47;
+    border: 3px inset #8b7d5c;
     margin-bottom: 2rem;
     font-family: "Palatino Linotype", serif;
 }
@@ -43,27 +44,38 @@ nav {
 nav a {
     margin: 0 1rem;
     text-decoration: none;
-    color: #3a3a6a;
+    color: #2f3b6d;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #7b1e1e;
+    color: #8b4513;
     text-decoration: underline;
 }
 
-/* Content area */
+/* Main content box */
 main {
-    background-color: #fffdf8;
-    border: 2px solid #b79d82;
+    background-color: #fefdf8;
+    border: 2px outset #b5a27a;
     padding: 1.5rem;
-    box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.1);
 }
 
 h2 {
     font-family: "Garamond", serif;
-    color: #2b2b2b;
-    border-bottom: 1px solid #ccc;
+    color: #3a2e1e;
+    border-bottom: 2px dotted #999;
     padding-bottom: 0.3rem;
     margin-top: 1.5rem;
+}
+
+/* Links inside content */
+main a {
+    color: #5a381e;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #7d2815;
+    text-decoration: underline;
 }
