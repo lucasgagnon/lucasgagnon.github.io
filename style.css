@@ -1,47 +1,63 @@
-/* ====== Sidebar Layout ====== */
+/* Layout Grid */
 .layout {
-  display: flex;
+  display: grid;
+  grid-template-columns: 220px 1fr 200px; /* left / main / right */
+  gap: 20px;
   min-height: 100vh;
 }
 
 /* Sidebar */
 .sidebar {
-  width: 220px;
-  background-color: #d8e2dc; /* pastel sage */
+  background: #f8ede9;
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
-}
-
-.sidebar h1 {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  color: #354f52;
-}
-
-.sidebar nav {
-  display: flex;
-  flex-direction: column;
-}
-
-.sidebar nav a {
-  text-decoration: none;
-  color: #354f52;
-  padding: 8px;
-  border-radius: 5px;
-  margin-bottom: 6px;
-  transition: background 0.2s;
-}
-
-.sidebar nav a:hover {
-  background-color: #b5c9c3;
+  border-right: 2px solid #d8c7c1;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 /* Main content */
 main {
-  flex: 1;
-  margin: 40px;
-  padding: 20px;
-  background-color: #fefbf6;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background: #ffffff;
+  padding: 30px;
+  border: 1px solid #e0d8d4;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Right Column (slow scroll images) */
+.image-column {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-box {
+  margin-bottom: 20px;
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+
+.image-box img {
+  max-width: 100%;
+  border: 2px solid #d8c7c1;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Slow scroll effect */
+.image-column {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Subtle slow scroll feel */
+.image-column::-webkit-scrollbar {
+  width: 6px;
+}
+.image-column::-webkit-scrollbar-thumb {
+  background: #c4b3ae;
+  border-radius: 3px;
 }
