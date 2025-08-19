@@ -45,8 +45,15 @@ body {
 }
 
 /* Main content */
-main {
-  background-color: #fffdf9;
+main {  background: none;
+  border: none;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+/* Each bubble acts like a mini “main pane” */
+.bubble {
   background-color: #fffdf5;
   padding: 1in;
   border: 1px solid #d4cfc4;
@@ -99,13 +106,4 @@ footer {
 
 p {
   margin-bottom: 1em;
-}
-
-.bubble {
-  background-color: #fffdf8;     /* slightly warm background */
-  border: 1px solid #d4cfc4;     /* subtle inner border */
-  padding: 1.2rem;
-  margin-bottom: 1.5rem;         /* gap between bubbles */
-  border-radius: 6px;            /* soft corners */
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
