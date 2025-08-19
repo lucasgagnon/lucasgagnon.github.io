@@ -91,12 +91,3 @@ main a:hover {
     letter-spacing: 0.5px; /* slightly spaced letters */
     text-transform: uppercase; /* optional for old-school feel */
 }
-
-.sidebar ul {
-    padding-left: 1.2em;
-    margin-top: 0.2em;
-}
-
-.sidebar li {
-    margin-bottom: 0.4em;
-}
