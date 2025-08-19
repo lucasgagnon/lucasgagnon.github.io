@@ -45,27 +45,29 @@ body {
 }
 
 /* Main content */
-main {    
-  background: none;
-  border: none;
+main {
   display: flex;
-  flex-direction: column;   /* stack bubbles vertically */
-  gap: 0.75in;                /* uniform space between bubbles */
-  padding: 2rem;
-  max-width: 700px;
-  margin: 0 auto;
+  flex-direction: column;  /* stack bubbles vertically */
+  gap: 0.5in;;               /* automatic vertical space between bubbles */
+  padding: 2rem;           /* optional padding around the whole main content */
+  margin: 0 auto;          /* center main content */
+  background: none;        /* no enclosing main background */
 }
+
 
 /* Each bubble acts like a mini “main pane” */
 .bubble {
   background-color: #fffdf5;
-  padding: 0.25in 1in;
   border: 1px solid #d4cfc4;
+  padding: 0.5in 1in;       /* top/bottom 0.5in, left/right 1in */
   border-radius: 12px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
-  max-width: 750px;
-  margin: auto;
-  margin-bottom: 2rem;  /* space below each bubble */
+  margin: 0;                /* gap handles spacing */
+
+  /* Fixed width for large screens, responsive for small screens */
+  width: 800px;             /* fixed width on desktops */
+  max-width: 100%;          /* prevents overflow on small screens */
+  box-sizing: border-box;   /* includes padding in width */
 }
 
 /* Image Column */
