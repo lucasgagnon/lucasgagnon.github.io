@@ -1,8 +1,8 @@
 /* Layout */
 body {
   font-family: "Georgia", serif;
-  background-color: #fdfbf7;
-  color: #333;
+  background-color: #fdfdfc; /* soft off-white */
+  color: #3b3b3b;
   margin: 0;
   line-height: 1.6;
 }
@@ -16,7 +16,7 @@ body {
 
 /* Sidebar */
 .sidebar {
-  background: #f9ecec;
+  background: #d8e2dc;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
@@ -28,24 +28,24 @@ body {
 .sidebar h1 {
   font-size: 1.5em;
   margin-bottom: 1em;
-  color: #6a4c4c;
+  color: #354f52;
 }
 
 .sidebar nav a {
   display: block;
   margin: 8px 0;
   text-decoration: none;
-  color: #6a4c4c;
+  color: #354f52;
   font-weight: bold;
 }
 
 .sidebar nav a:hover {
-  color: #a06f6f;
+  color: #b5c9c3;
 }
 
 /* Main content */
 main {
-  background: #ffffff;
+  background: #fefbf6;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
