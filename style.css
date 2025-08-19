@@ -50,7 +50,7 @@ main {
   border: none;
   display: flex;
   flex-direction: column;   /* stack bubbles vertically */
-  gap: 2rem;                /* uniform space between bubbles */
+  gap: 0.75in;                /* uniform space between bubbles */
   padding: 2rem;
   max-width: 700px;
   margin: 0 auto;
