@@ -1,26 +1,64 @@
-/* ==========================
-   Sepia Manuscript Vintage
-   ========================== */
-
-/* Body & Layout */
+/* ====== Global Style ====== */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;   /* full viewport height for sticky footer */
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: "Georgia", serif;
-    background-color: #fbf6ef;  /* warm parchment */
-    color: #2d1e0f;             /* dark brown text */
-    line-height: 1.7;
+  font-family: "Georgia", serif;
+  background-color: #fdfdfc; /* soft off-white */
+  color: #3b3b3b;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-/* Header */
+/* ====== Header & Navigation ====== */
 header {
-    text-align: center;
-    padding: 1rem;
-    border: 4px double #7a5c35;   /* warm sepia border */
-    background-color: #f3e8d3;    /* light sepia background */
-    margin-bottom: 2rem;
-    box-shadow: 3px 3px 8px rgba(0,0
+  background-color: #d8e2dc; /* pastel sage */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #b5c9c3;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #354f52;
+}
+
+nav {
+  margin-top: 8px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #354f52;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background-color: #b5c9c3; /* hover pastel green */
+}
+
+/* ====== Main Content ====== */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fefbf6; /* soft cream */
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: #6a4c93; /* pastel plum accent */
+  margin-top: 0;
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: #d8e2dc;
+  color: #555;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8em;
+  border-top: 2px solid #b5c9c3;
+}
