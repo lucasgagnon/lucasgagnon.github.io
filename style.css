@@ -1,5 +1,5 @@
 /* ==========================
-   Dusty Rose & Stone Tastefully Vintage
+   Muted Teal & Mustard Vintage
    ========================== */
 
 /* Body & Layout */
@@ -11,8 +11,8 @@ body {
     margin: 0 auto;
     padding: 2rem;
     font-family: "Georgia", serif;
-    background-color: #f8f4f2;  /* off-white cream */
-    color: #3c2c28;             /* charcoal brown text */
+    background-color: #f0f3f2;  /* soft grey-green */
+    color: #2b3a36;             /* deep teal-grey text */
     line-height: 1.7;
 }
 
@@ -20,5 +20,6 @@ body {
 header {
     text-align: center;
     padding: 1rem;
-    border: 4px double #a08478;   /* stone-colored border */
-    background-col
+    border: 4px double #6b7b6f;   /* muted forest green border */
+    background-color: #d4c991;    /* muted mustard background */
+    marg
