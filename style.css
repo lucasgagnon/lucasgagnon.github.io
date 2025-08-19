@@ -65,9 +65,10 @@ main {
   margin: 0;                /* gap handles spacing */
 
   /* Fixed width for large screens, responsive for small screens */
-  width: 800px;             /* fixed width on desktops */
-  max-width: 100%;          /* prevents overflow on small screens */
-  box-sizing: border-box;   /* includes padding in width */
+  width: 90%;               /* fill 90% of available container width */
+  max-width: 850px;         /* prevent becoming too wide on very large screens */
+  min-width: 400px;         /* prevent bubbles from becoming too narrow */
+  box-sizing: border-box;   /* padding included in width */
 }
 
 /* Image Column */
