@@ -1,5 +1,5 @@
 /* ==========================
-   Muted Teal & Mustard Vintage
+   Sepia Manuscript Vintage
    ========================== */
 
 /* Body & Layout */
@@ -11,8 +11,8 @@ body {
     margin: 0 auto;
     padding: 2rem;
     font-family: "Georgia", serif;
-    background-color: #f0f3f2;  /* soft grey-green */
-    color: #2b3a36;             /* deep teal-grey text */
+    background-color: #fbf6ef;  /* warm parchment */
+    color: #2d1e0f;             /* dark brown text */
     line-height: 1.7;
 }
 
@@ -20,6 +20,7 @@ body {
 header {
     text-align: center;
     padding: 1rem;
-    border: 4px double #6b7b6f;   /* muted forest green border */
-    background-color: #d4c991;    /* muted mustard background */
-    marg
+    border: 4px double #7a5c35;   /* warm sepia border */
+    background-color: #f3e8d3;    /* light sepia background */
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 8px rgba(0,0
