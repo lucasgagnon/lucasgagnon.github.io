@@ -79,3 +79,24 @@ main a:hover {
     color: #9c3d1e;
     text-decoration: underline;
 }
+
+.sidebar h3 {
+    font-family: "Garamond", serif;
+    color: #5a3d1b; /* warm brown */
+    font-weight: normal;
+    font-size: 1.1em;
+    border-bottom: 2px solid #b79d82; /* subtle sepia line */
+    padding-bottom: 0.2em;
+    margin-bottom: 0.8em;
+    letter-spacing: 0.5px; /* slightly spaced letters */
+    text-transform: uppercase; /* optional for old-school feel */
+}
+
+.sidebar ul {
+    padding-left: 1.2em;
+    margin-top: 0.2em;
+}
+
+.sidebar li {
+    margin-bottom: 0.4em;
+}
