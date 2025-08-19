@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name – CV</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Ensure the PDF embed is responsive */
+    .pdf-container {
+      width: 100%;
+      height: 80vh; /* fills most of viewport height */
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .pdf-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h1>Your Name</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <h2>Curriculum Vitae</h2>
+      <p>You can browse my CV directly below:</p>
+      <div class="pdf-container">
+        <iframe src="cv.pdf"></iframe>
+      </div>
+      <p>If the PDF does not load, you can also <a href="cv.pdf" target="_blank">download it here</a>.</p>
+    </main>
+
+    <!-- Image Column -->
+    <aside class="image-column">
+      <div class="image-box"><img src="images/cv1.jpg" alt="CV Image 1"></div>
+      <div class="image-box"><img src="images/cv2.jpg" alt="CV Image 2"></div>
+    </aside>
+
+  </div>
+
+  <footer>
+    <p>made with ChatGPT</p>
+  </footer>
+</body>
+</html>
