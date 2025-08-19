@@ -3,9 +3,12 @@ body {
     background-color: #f8f4ec; /* warm parchment */
     color: #2d1e0f;
     max-width: 900px;
-    margin: 0 auto;
     padding: 2rem;
     line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* full viewport height */
+    margin: 0;
 }
 
 /* Header */
@@ -59,6 +62,7 @@ main {
     border: 2px solid #a68b6a;
     padding: 1.5rem;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    flex: 1;
 }
 
 h2 {
@@ -91,12 +95,14 @@ main a:hover {
     letter-spacing: 0.5px; /* slightly spaced letters */
     text-transform: uppercase; /* optional for old-school feel */
 }
+
+/* Footer styling */
 footer {
     text-align: center;
-    font-size: 0.4em;       /* small text */
-    color: #5a4430;         /* vintage brown tone */
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #b79d82;  /* subtle sepia line */
+    font-size: 0.8em;
+    color: #5a4430;
+    padding: 1rem 0;
+    border-top: 1px solid #b79d82;
     font-family: "Georgia", serif;
+    background-color: #fbf6ef; /* optional: matches sepia background */
 }
