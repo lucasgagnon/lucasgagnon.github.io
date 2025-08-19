@@ -45,22 +45,27 @@ body {
 }
 
 /* Main content */
-main {  background: none;
+main {    
+  background: none;
   border: none;
+  display: flex;
+  flex-direction: column;   /* stack bubbles vertically */
+  gap: 2rem;                /* uniform space between bubbles */
   padding: 2rem;
   max-width: 700px;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 /* Each bubble acts like a mini “main pane” */
 .bubble {
   background-color: #fffdf5;
-  padding: 1in;
+  padding: 0.25in 1in;
   border: 1px solid #d4cfc4;
   border-radius: 12px;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
   max-width: 750px;
   margin: auto;
+  margin-bottom: 2rem;  /* space below each bubble */
 }
 
 /* Image Column */
