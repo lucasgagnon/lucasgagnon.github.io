@@ -91,3 +91,12 @@ main a:hover {
     letter-spacing: 0.5px; /* slightly spaced letters */
     text-transform: uppercase; /* optional for old-school feel */
 }
+footer {
+    text-align: center;
+    font-size: 0.8em;       /* small text */
+    color: #5a4430;         /* vintage brown tone */
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #b79d82;  /* subtle sepia line */
+    font-family: "Georgia", serif;
+}
