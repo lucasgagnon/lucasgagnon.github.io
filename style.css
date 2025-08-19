@@ -1,22 +1,27 @@
+/* ==========================
+   Olive & Tan Tastefully Vintage
+   ========================== */
+
+/* Body & Layout */
 body {
-    font-family: "Georgia", "Times New Roman", serif;
-    background-color: #f8f4ec; /* warm parchment */
-    color: #2d1e0f;
-    max-width: 900px;
-    padding: 2rem;
-    line-height: 1.7;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  /* full viewport height */
-    margin: 0;
+    min-height: 100vh;   /* full viewport height for sticky footer */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: "Georgia", serif;
+    background-color: #f5f3ec;  /* soft cream */
+    color: #3b3a2f;             /* dark olive/brown text */
+    line-height: 1.7;
 }
 
 /* Header */
 header {
     text-align: center;
     padding: 1rem;
-    border: 4px double #6e4b28; /* dark sepia frame */
-    background-color: #f3e8d3;
+    border: 4px double #7a745c;   /* muted olive border */
+    background-color: #e0ddc8;    /* light olive/tan */
     margin-bottom: 2rem;
     box-shadow: 3px 3px 8px rgba(0,0,0,0.15);
 }
@@ -25,78 +30,107 @@ header h1 {
     margin: 0;
     font-size: 2.4em;
     font-family: "Garamond", serif;
-    color: #3d2b1f;
+    color: #3b3a2f;
 }
 
 header p {
     font-style: italic;
     margin-top: 0.5rem;
-    color: #5a4430;
+    color: #5a5443;
 }
 
-/* Navigation bar */
+/* Navigation Bar */
 nav {
     text-align: center;
-    background-color: #e9dbc7;
+    background-color: #dcd7c1;  /* pale tan/olive */
     padding: 0.7rem;
-    border: 3px ridge #7a5c3f;
+    border: 3px ridge #7a745c;
     margin-bottom: 2rem;
-    font-family: "Palatino Linotype", serif;
 }
 
 nav a {
     margin: 0 1rem;
     text-decoration: none;
-    color: #4b2e1e;
+    color: #3b3a2f;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #8b4513;
+    color: #5a4430;  /* warm brown hover */
     text-decoration: underline;
 }
 
-/* Main content box */
+/* Main Content & Sidebar */
 main {
-    background-color: #fdfaf4;
-    border: 2px solid #a68b6a;
-    padding: 1.5rem;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 2rem;
+    text-align: left;
+    flex-wrap: wrap;  /* responsive stacking */
+    flex: 1;          /* ensures footer sticks at bottom */
+}
+
+.content {
+    flex: 2;
+    min-width: 250px;
+}
+
+.sidebar {
     flex: 1;
-}
-
-h2 {
-    font-family: "Garamond", serif;
-    color: #3a2a1a;
-    border-bottom: 1px solid #c2a98a;
-    padding-bottom: 0.3rem;
-    margin-top: 1.5rem;
-}
-
-/* Links inside content */
-main a {
-    color: #5a2f15;
-    font-weight: bold;
-}
-
-main a:hover {
-    color: #9c3d1e;
-    text-decoration: underline;
+    min-width: 200px;
+    background-color: #f6f3e8;
+    border: 2px solid #b79d82;
+    padding: 1rem;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+    font-size: 0.95em;
 }
 
 .sidebar h3 {
     font-family: "Garamond", serif;
-    color: #5a3d1b; /* warm brown */
+    color: #5a3d1b;  /* warm brown */
     font-weight: normal;
     font-size: 1.1em;
-    border-bottom: 2px solid #b79d82; /* subtle sepia line */
+    border-bottom: 2px solid #b79d82;
     padding-bottom: 0.2em;
     margin-bottom: 0.8em;
-    letter-spacing: 0.5px; /* slightly spaced letters */
-    text-transform: uppercase; /* optional for old-school feel */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
-/* Footer styling */
+.sidebar ul {
+    padding-left: 1.2em;
+    margin-top: 0.2em;
+}
+
+.sidebar li {
+    margin-bottom: 0.4em;
+}
+
+/* Portrait Image */
+.portrait {
+    max-width: 180px;
+    border: 3px solid #7a745c;
+    padding: 5px;
+    float: right;
+    margin: 0 0 1em 1em;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Paragraphs */
+main p {
+    margin-top: 0.3em;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #7a745c;
+    padding-left: 1em;
+    font-style: italic;
+    color: #4a4430;
+    margin: 1.5em 0;
+    background-color: #f9f7ed;
+}
+
+/* Footer */
 footer {
     text-align: center;
     font-size: 0.8em;
@@ -104,5 +138,40 @@ footer {
     padding: 1rem 0;
     border-top: 1px solid #b79d82;
     font-family: "Georgia", serif;
-    background-color: #fbf6ef; /* optional: matches sepia background */
+    background-color: #f5f3ec;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 750px) {
+    main {
+        flex-direction: column;
+    }
+
+    .portrait {
+        float: none;
+        display: block;
+        margin: 0 auto 1em auto;
+    }
+
+    .sidebar {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Links inside main content */
+main a {
+    color: #5a4430;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #7a5c35;
+    text-decoration: underline;
+}
+
+/* Horizontal rules (optional decorative) */
+hr {
+    border: 0;
+    border-top: 2px dotted #7a745c;
+    margin: 2em 0;
 }
