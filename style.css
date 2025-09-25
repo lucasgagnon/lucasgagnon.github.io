@@ -18,7 +18,7 @@ body {
           height: fit-content; } 
 
 .layout { display: grid; 
-         grid-template-columns: 220px 1fr 400px; /* left / main / right */ 
+         grid-template-columns: 220px 1fr 1fr; /* left / main / right */ 
          gap: 20px; 
          min-height: 100vh; }
 
