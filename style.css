@@ -10,9 +10,12 @@ body {
 
 .sidebar { background: #d8e2dc; 
           padding: 20px; 
-          border-radius: 12px; 
+          border-radius: 12px;
+          border-radius: 0px;
           border: 1px solid #b0b0b0;
+          border: 0px
           box-shadow: 2px 2px 6px rgba(0,0,0,0.1); 
+          box-shadow: 0px 0px 0px rgba(0,0,0,0); 
           position: sticky; 
           top: 20px; 
           height: fit-content; } 
