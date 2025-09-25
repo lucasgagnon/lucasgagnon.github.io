@@ -91,7 +91,7 @@ main {
   width: 90%;               /* fill 90% of available container width */
   max-width: 400px;         /* prevent becoming too wide on very large screens */
   min-width: 100px;         /* prevent bubbles from becoming too narrow */
-  box-sizing: border-box;   /* padding included in width */
+  /* box-sizing: border-box;   padding included in width */
 }
 
 
