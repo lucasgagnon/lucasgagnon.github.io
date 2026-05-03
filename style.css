@@ -30,7 +30,7 @@ body {
   font-size: 1.5em;
   margin-bottom: 1em;
   color: #354f52;
-  margin = 10px;
+  margin = 20px;
 }
 
 .sidebar nav a {
@@ -38,7 +38,7 @@ body {
   text-decoration: none;
   color: #354f52;
   font-weight: bold;
-  margin = 10px;
+  margin = 20px;
 }
 
 .sidebar nav a:hover {
