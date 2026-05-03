@@ -17,7 +17,6 @@ body {
           position: sticky; 
           top: 2rem; 
           height: fit-content;
-          margin = 10px; 
          } 
 
 .layout { display: grid; 
@@ -30,7 +29,7 @@ body {
   font-size: 1.5em;
   margin-bottom: 1em;
   color: #354f52;
-  margin = 20px;
+  margin = 20px 20px 20px 20px;
 }
 
 .sidebar nav a {
@@ -38,7 +37,7 @@ body {
   text-decoration: none;
   color: #354f52;
   font-weight: bold;
-  margin = 20px;
+  margin = 20px 20px 20px 20px;
 }
 
 .sidebar nav a:hover {
