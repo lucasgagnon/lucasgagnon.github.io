@@ -16,7 +16,8 @@ body {
           box-shadow: 2px 2px 6px rgba(0,0,0,0.1); 
           position: sticky; 
           top: 2rem; 
-          height: fit-content; } 
+          height: fit-content; 
+          margin: 8px;} 
 
 .layout { display: grid; 
          grid-template-columns: 220px 3fr 1fr; /* left / main / right */ 
@@ -31,7 +32,6 @@ body {
 
 .sidebar nav a {
   display: block;
-  margin: 8px;
   text-decoration: none;
   color: #354f52;
   font-weight: bold;
