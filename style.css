@@ -46,7 +46,7 @@ main {
   display: flex;
   flex-direction: column;  /* stack bubbles vertically */
   gap: 0.25in;               /* automatic vertical space between bubbles */
-  padding: 2rem 0.5rem 2rem 2rem;           /* optional padding around the whole main content */
+  /*padding: 2rem 0.5rem 2rem 2rem;*/           /* optional padding around the whole main content */
   margin: 0 auto;          /* center main content */
   background: none;        /* no enclosing main background */
 }
