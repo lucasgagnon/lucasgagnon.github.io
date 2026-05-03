@@ -9,7 +9,7 @@ body {
 }
 
 .sidebar { background: #d8e2dc; 
-          padding: 1pt; 
+          padding: 20pt; 
           margin-left: 1.5rem;
           border-radius: 12px;
           border: 1px solid #b0b0b0;
@@ -29,7 +29,7 @@ body {
   font-size: 1.5em;
   margin-bottom: 1em;
   color: #354f52;
-  margin = 20px 20px 20px 20px;
+  margin = 20px;
 }
 
 .sidebar nav a {
@@ -37,8 +37,7 @@ body {
   text-decoration: none;
   color: #354f52;
   font-weight: bold;
-  margin = 20px 20px 20px 20px;
-  padding = 50px;
+  margin = 20px;
 }
 
 .sidebar nav a:hover {
