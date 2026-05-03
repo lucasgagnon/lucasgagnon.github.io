@@ -38,6 +38,7 @@ body {
   color: #354f52;
   font-weight: bold;
   margin = 20px 20px 20px 20px;
+  padding = 10px;
 }
 
 .sidebar nav a:hover {
