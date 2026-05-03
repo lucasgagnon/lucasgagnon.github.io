@@ -1,6 +1,6 @@
 /* Layout */
 body {
-  font-family: "Georgia", serif;
+  font-family: "Palatino", serif;
   background-color: #fdfdfc; /* soft off-white */
   background-color: #faf9f7;
   color: #3b3b3b;
@@ -30,7 +30,7 @@ body {
 
 .sidebar nav a {
   display: block;
-  margin: 8px 0;
+  margin: 8px 8px;
   text-decoration: none;
   color: #354f52;
   font-weight: bold;
