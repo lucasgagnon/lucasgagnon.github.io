@@ -31,7 +31,7 @@ body {
 
 .sidebar nav a {
   display: block;
-  margin: 8px 0;
+  margin: 8px;
   text-decoration: none;
   color: #354f52;
   font-weight: bold;
