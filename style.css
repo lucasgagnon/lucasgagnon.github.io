@@ -34,6 +34,10 @@ body {
   line-height: 1.7;
 }
 
+.site-header {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+}
+
 a {
   color: var(--sage-dark);
   text-decoration-thickness: 1px;
