@@ -38,6 +38,12 @@ body {
   font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
 }
 
+.bubble h1,
+.bubble h2,
+.bubble h3 {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+}
+
 a {
   color: var(--sage-dark);
   text-decoration-thickness: 1px;
