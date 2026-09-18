@@ -29,9 +29,25 @@ body {
   flex-direction: column;
   background: var(--page);
   color: var(--ink);
-  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 1.0625rem;
   line-height: 1.7;
+}
+
+.site-header {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+}
+
+.bubble h1 {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+}
+
+.bubble h2 {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+}
+
+.bubble h3 {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
 }
 
 a {
