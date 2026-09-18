@@ -6,89 +6,239 @@ title: Teaching
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas Gagnon – Teaching</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .layout main {
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
+
+    .layout main .page-title {
+      font-size: 1.625rem;
+      font-weight: 700;
+    }
+
+    .layout main h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 620px) {
+      .layout main {
+        font-size: 1rem;
+      }
+    }
+
+    .image-box img {
+      border-color: var(--line);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    @media (max-width: 620px) {
+      .image-box img {
+        border-radius: 9px;
+      }
+    }
+
+    .image-rail-track {
+      display: contents;
+    }
+
+    @media (min-width: 861px) {
+      .image-column {
+        overflow: hidden;
+        overflow: clip;
+        overflow-anchor: none;
+      }
+
+      .image-rail-track {
+        display: flow-root;
+        will-change: transform;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="layout">
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h1>Lucas Gagnon</h1>
-      <nav>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="index.html">Lucas Gagnon</a>
+      <nav class="site-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
+        <a href="teaching.html" aria-current="page">Teaching</a>
         <a href="cv.html">CV</a>
       </nav>
-    </aside>
+    </div>
+  </header>
 
-    <!-- Main Content -->
+  <div class="layout">
     <main>
-      <div class="bubble">
-      <h2>Teaching</h2>
-      <p>
-        I teach by giving students small pieces of expertise and challenging them to build something bigger.
-        I find that social bonds and community in the classroom catalyze deep and meaningful learing.  
-        I'm fascinated with metacognition and critical thinking, and encourage my students to question how and what they are learning at all times.  
-        <!--Read more in my teaching statement.-->
-      </p>
-      <p>
-      Current and past students can find course materials on the univerity LMS platform (e.g. Brightspace).
-        <!--Sample materials that I have developed and used in the past can be found below my teaching experience.-->
-      </p>
-      </div>
-      <div class="bubble">
-      <h3>Teaching at University of Southern California</h3>
-      <ul>
-        <li><b>Math 432 (Applied Combinatorics)</b> – Spring 2026. A first undergraduate course in combinatorics, following <em>A Walk Through Combinatorics</em> (Bona) </it> </li>
-        <li><b>Math 117 (Precalculus for Business and Economics)</b> – Fall 2025 (x2 sections).  A tour of algebraic and exponential functions, covering abstract properties, graphing, and interpreting models.</li>
-      </ul>
-      </div>
+      <section class="bubble">
+        <h1 class="page-title">Teaching</h1>
+        <p>
+          I teach by giving students small pieces of expertise and challenging them to build something bigger.
+          I find that building strong social ties and community in the classroom is the best catalyst for deep and meaningful learing.
+          I'm also fascinated with metacognition and critical thinking, and encourage my students to question how and what they are learning at all times.
+          <!--Read more in my teaching statement.-->
+        </p>
+        <p>
+          Current and past students can find course materials on the univerity LMS platform (e.g. Brightspace).
+          <!--Sample materials that I have developed and used in the past can be found below my teaching experience.-->
+        </p>
+      </section>
 
-      <div class="bubble">
-      <h3>Teaching at York University</h3>
-      <ul>
-        <li><b>Math 2022 (Advanced Linear Algebra)</b> – Spring 2025. An axiomatic treatment of linear algebra for students who have completed a course in matrix-vector methods.  Covers abstract vector spaces, linear transformations, coordinates and matrix theory, inner product spaces, and orthogonality.</li>
-        <li><b>Math 1506 (Calculus for Life Sciences)</b> – Spring 2024. An introduction to differential calculus with an emphasis on applications to biology and medicine.  Covers limits, continuity, techniques and applications of differentiation.</li>
-        <li><b>Math 1200 (Problems, Conjectures, and Proofs)</b> – Spring 2023. Introduces new majors to rigorous mathematical proof and communication using topics from logic, algebra, number theory, and combinatorics.</li>
-      </ul>
-      </div>
+      <section class="bubble">
+        <h2>Teaching at University of Southern California</h2>
+        <ul>
+          <li><b>Math 432 (Applied Combinatorics)</b> – Spring 2026. A first undergraduate course in combinatorics, following <em>A Walk Through Combinatorics</em> (Bona).</li>
+          <li><b>Math 117 (Precalculus for Business and Economics)</b> – Fall 2025 (x2 sections). A tour of algebraic and exponential functions, covering abstract properties, graphing, and interpreting models.</li>
+        </ul>
+      </section>
 
-      <div class="bubble">
-      <h3>Teaching at University of Colorado</h3>
-      <ul>
-        <li><b>Assistant Course Coordiantor for Math 2400 (Multivariable Calculus)</b> – AY 2021-22.  Coordinated TAs and recitations, improved course curriculum and materials, and miscellaneous administrative responsiblities.</li>
-        <li><b>ARSC 1440:</b> Offered through the <a href="https://www.colorado.edu/sasc/">Student Academic Support Center (SASC)</a>, a mutlicultural learning community that provides mulifaceted support to a diverse set of study populations.   These one-credit courses supported sutdents in SASC who were enrolled in a calculus course at the University of Colorado Boulder, with an emphasis on the importance of diversity and inclusive community in mathematics.
-          <ul>
-            <li>Supporting Multivariable Calculus – Fall 2020, Spring 2021</li>
-            <li>Supporting Intergral Calculus 2 – Spring 2020</li>
-          </ul>
-        <li><b>Math 1300 (Calculus 1):</b> Covers limits, continuity, techniques and applications of differentiation, the concept of  integration, and the fundamental theorem of calculus.
-          <ul>
-            <li>Instructor of record – Spring 2019</li>
-            <li>Recitation/teaching assistant – Fall 2017</li>
-          </ul>
-        <li><b>Math 2300 (Calculus 2):</b> Covers techniques and applications of integration, sequences, series, Taylor series, separable differential equations, and Calculus with parametric and polar equations.
-          <ul>
-            <li>Instructor of record – Spring 2019, Fall 2019</li>
-            <li>Recitation/teaching assistant – Spring 2018</li>
-          </ul>
-      </ul>
-      </div>
-        
+      <section class="bubble">
+        <h2>Teaching at York University</h2>
+        <ul>
+          <li><b>Math 2022 (Advanced Linear Algebra)</b> – Spring 2025. An axiomatic treatment of linear algebra for students who have completed a course in matrix-vector methods. Covers abstract vector spaces, linear transformations, coordinates and matrix theory, inner product spaces, and orthogonality.</li>
+          <li><b>Math 1506 (Calculus for Life Sciences)</b> – Spring 2024. An introduction to differential calculus with an emphasis on applications to biology and medicine. Covers limits, continuity, techniques and applications of differentiation.</li>
+          <li><b>Math 1200 (Problems, Conjectures, and Proofs)</b> – Spring 2023. Introduces new majors to rigorous mathematical proof and communication using topics from logic, algebra, number theory, and combinatorics.</li>
+        </ul>
+      </section>
+
+      <section class="bubble">
+        <h2>Teaching at University of Colorado</h2>
+        <ul>
+          <li><b>Assistant Course Coordiantor for Math 2400 (Multivariable Calculus)</b> – AY 2021-22. Coordinated TAs and recitations, improved course curriculum and materials, and miscellaneous administrative responsiblities.</li>
+          <li>
+            <b>ARSC 1440:</b> Offered through the <a href="https://www.colorado.edu/sasc/">Student Academic Support Center (SASC)</a>, a mutlicultural learning community that provides mulifaceted support to a diverse set of study populations. These one-credit courses supported sutdents in SASC who were enrolled in a calculus course at the University of Colorado Boulder, with an emphasis on the importance of diversity and inclusive community in mathematics.
+            <ul>
+              <li>Supporting Multivariable Calculus – Fall 2020, Spring 2021</li>
+              <li>Supporting Intergral Calculus 2 – Spring 2020</li>
+            </ul>
+          </li>
+          <li>
+            <b>Math 1300 (Calculus 1):</b> Covers limits, continuity, techniques and applications of differentiation, the concept of integration, and the fundamental theorem of calculus.
+            <ul>
+              <li>Instructor of record – Spring 2019</li>
+              <li>Recitation/teaching assistant – Fall 2017</li>
+            </ul>
+          </li>
+          <li>
+            <b>Math 2300 (Calculus 2):</b> Covers techniques and applications of integration, sequences, series, Taylor series, separable differential equations, and Calculus with parametric and polar equations.
+            <ul>
+              <li>Instructor of record – Spring 2019, Fall 2019</li>
+              <li>Recitation/teaching assistant – Spring 2018</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
     </main>
 
-    <!-- Image Column -->
-    <aside class="image-column">
-      <div class="image-box"><img src="images/teaching1.jpg" alt="Teaching Image 1"></div>
-      <div class="image-box"><img src="images/teaching2.jpg" alt="Teaching Image 2"></div>
+    <aside class="image-column" aria-label="Teaching photographs">
+      <div class="image-rail-track">
+        <div class="image-box"><img src="images/teaching1.jpg" alt="Teaching photograph 1" loading="lazy"></div>
+        <div class="image-box"><img src="images/teaching2.jpg" alt="Teaching photograph 2" loading="lazy"></div>
+      </div>
     </aside>
-
   </div>
 
   <footer>
     <p>made with ChatGPT</p>
   </footer>
+  <script>
+    (() => {
+      const main = document.querySelector(".layout main");
+      const rail = document.querySelector(".image-column");
+      const track = rail?.querySelector(".image-rail-track");
+      const desktop = window.matchMedia("(min-width: 861px)");
+
+      if (!main || !rail || !track) return;
+
+      let frameRequested = false;
+      let needsMeasure = true;
+      let scrollStart = 0;
+      let mainTravel = 0;
+      let imageTravel = 0;
+      let lastOffset = null;
+
+      const measure = () => {
+        const mainRect = main.getBoundingClientRect();
+        const railHeight = rail.getBoundingClientRect().height;
+        const imageHeight = track.getBoundingClientRect().height;
+        const stickyTop = parseFloat(window.getComputedStyle(rail).top) || 0;
+        const mainTop = mainRect.top + window.scrollY;
+        const pageEnd = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+
+        scrollStart = Math.max(0, mainTop - stickyTop);
+        const scrollEnd = Math.min(pageEnd, mainTop + mainRect.height - stickyTop - railHeight);
+        mainTravel = Math.max(0, scrollEnd - scrollStart);
+        imageTravel = Math.max(0, imageHeight - railHeight);
+        needsMeasure = false;
+      };
+
+      const renderRail = () => {
+        frameRequested = false;
+
+        if (!desktop.matches) {
+          track.style.removeProperty("transform");
+          lastOffset = null;
+          return;
+        }
+
+        // Measure only when the layout changes, never on ordinary scroll frames.
+        if (needsMeasure) measure();
+        const progress = mainTravel > 0
+          ? Math.min(1, Math.max(0, (window.scrollY - scrollStart) / mainTravel))
+          : 0;
+        const offset = progress * imageTravel;
+
+        if (offset !== lastOffset) {
+          // Direct, fractional-pixel movement follows the page without easing lag.
+          track.style.transform = `translate3d(0, ${-offset}px, 0)`;
+          lastOffset = offset;
+        }
+      };
+
+      const requestRender = () => {
+        if (frameRequested) return;
+        frameRequested = true;
+        window.requestAnimationFrame(renderRail);
+      };
+
+      const invalidate = () => {
+        needsMeasure = true;
+        requestRender();
+      };
+
+      const images = track.querySelectorAll("img");
+      const prepareImages = () => {
+        // Load the whole desktop rail before its final height is measured.
+        if (desktop.matches) images.forEach((image) => { image.loading = "eager"; });
+        invalidate();
+      };
+
+      images.forEach((image) => {
+        image.addEventListener("load", invalidate);
+        image.addEventListener("error", invalidate);
+      });
+      window.addEventListener("scroll", requestRender, { passive: true });
+      window.addEventListener("resize", invalidate);
+      window.addEventListener("load", invalidate);
+      window.addEventListener("pageshow", invalidate);
+      desktop.addEventListener("change", prepareImages);
+
+      if ("ResizeObserver" in window) {
+        const observer = new ResizeObserver(invalidate);
+        observer.observe(main);
+        observer.observe(rail);
+        observer.observe(track);
+      }
+      if (document.fonts) document.fonts.ready.then(invalidate);
+
+      prepareImages();
+    })();
+  </script>
 </body>
 </html>

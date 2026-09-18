@@ -1,165 +1,418 @@
-/* Layout */
+:root {
+  --page: #faf9f7;
+  --paper: #fffdf5;
+  --sage: #d8e2dc;
+  --sage-dark: #354f52;
+  --sage-hover: #b5c9c3;
+  --ink: #3b3b3b;
+  --muted: #6f706d;
+  --line: #d4cfc4;
+  --line-strong: #b0b0b0;
+  --image-line: #e0d6d1;
+  --shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  --content-width: 1180px;
+  --header-height: 74px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Palatino", serif;
-  background-color: #fdfdfc; /* soft off-white */
-  background-color: #faf9f7;
-  color: #3b3b3b;
+  min-height: 100vh;
   margin: 0;
-  line-height: 1.6;
-}
-
-.sidebar { background: #d8e2dc; 
-          padding: 8pt; 
-          margin-left: 1.5rem;
-          border-radius: 12px;
-          border: 1px solid #b0b0b0;
-          box-shadow: 2px 2px 6px rgba(0,0,0,0.1); 
-          position: sticky; 
-          top: 2rem; 
-          height: fit-content;
-         } 
-
-.layout { display: grid; 
-         grid-template-columns: 220px 3fr 1fr; /* left / main / right */ 
-         gap: 20px 4px; 
-         min-height: 100vh; 
-        }
-
-.sidebar h1 {
-  font-size: 1.5em;
-  margin-bottom: 1em;
-  color: #354f52;
-  margin = 20px;
-}
-
-.sidebar nav a {
-  display: block;
-  text-decoration: none;
-  color: #354f52;
-  font-weight: bold;
-  margin = 20px;
-}
-
-.sidebar nav a:hover {
-  color: #b5c9c3;
-}
-
-/* Main content */
-main {
   display: flex;
-  flex-direction: column;  /* stack bubbles vertically */
-  gap: 0.25in;               /* automatic vertical space between bubbles */
-  padding: 2rem;         /* optional padding around the whole main content */
-  margin: 0 auto;          /* center main content */
-  background: none;        /* no enclosing main background */
+  flex-direction: column;
+  background: var(--page);
+  color: var(--ink);
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.0625rem;
+  line-height: 1.7;
 }
 
+a {
+  color: var(--sage-dark);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+}
 
-/* Each bubble acts like a mini “main pane” */
+a:hover {
+  color: #4f716e;
+}
+
+a:focus-visible {
+  outline: 3px solid rgba(53, 79, 82, 0.35);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* Top navigation */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  min-height: var(--header-height);
+  background: rgba(216, 226, 220, 0.97);
+  border-bottom: 1px solid var(--line-strong);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.site-header-inner {
+  width: min(var(--content-width), calc(100% - 3rem));
+  min-height: var(--header-height);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.site-title {
+  color: var(--sage-dark);
+  font-size: clamp(1.35rem, 2.6vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-title:hover {
+  color: var(--sage-dark);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.35rem;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  color: var(--sage-dark);
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  background: rgba(255, 253, 245, 0.7);
+}
+
+.site-nav a[aria-current="page"] {
+  background: var(--sage-dark);
+  color: var(--paper);
+}
+
+/* Page layout */
+.layout {
+  width: min(var(--content-width), calc(100% - 3rem));
+  margin: 0 auto;
+  padding: 2.25rem 0 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 820px) minmax(190px, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.75rem);
+  align-items: start;
+}
+
+main {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .bubble {
-  background-color: #fffdf5;
-  border: 1px solid #d4cfc4;
-  padding: 0.25in 0.5in;       /* top/bottom 0.5in, left/right 1in */
-  border-radius: 12px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
-  margin: 0;                /* gap handles spacing */
-
-  /* Fixed width for large screens, responsive for small screens */
-  width: 100%;               /* fill 90% of available container width */
-  max-width: 765px;         /* prevent becoming too wide on very large screens */
-  min-width: 400px;         /* prevent bubbles from becoming too narrow */
-  box-sizing: border-box;   /* padding included in width */
-}
-
-.bubble iframe,
-.bubble embed {
   width: 100%;
-  height: 90vh; /* almost full height of viewport */
-  border: none;
+  min-width: 0;
+  margin: 0;
+  padding: clamp(1.35rem, 2.8vw, 2rem) clamp(1.35rem, 4vw, 3rem);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
 }
 
-/* Image Column */
+.bubble > :first-child {
+  margin-top: 0;
+}
+
+.bubble > :last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--sage-dark);
+  line-height: 1.25;
+}
+
+.page-title {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.55rem, 3vw, 2rem);
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
+
+h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.12rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+ul,
+ol {
+  margin: 0.75rem 0 0;
+  padding-left: 1.4em;
+}
+
+li + li {
+  margin-top: 0.65rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.45rem;
+}
+
+/* Optional image rail */
 .image-column {
   position: sticky;
-  top: 20px;
-  align-self: start;
-  height: 90vh;
+  top: calc(var(--header-height) + 1.5rem);
+  width: 100%;
+  max-height: calc(100vh - var(--header-height) - 3rem);
   overflow-y: auto;
-  padding: 10px;
-  border-radius: 0px;
-  /*background: #f9f7f2;*/
-  /*box-shadow: 2px 2px 6px rgba(0,0,0,0.08);*/
-  background: #faf9f7;
-
-  /* Fixed width for large screens, responsive for small screens */
-  width: 90%;               /* fill 90% of available container width */
-  max-width: 400px;         /* prevent becoming too wide on very large screens */
-  min-width: 100px;         /* prevent bubbles from becoming too narrow */
-  /* box-sizing: border-box;   padding included in width */
+  padding: 0 0.45rem 0 0;
+  scrollbar-color: #cbbab2 transparent;
+  scrollbar-width: thin;
 }
 
-
-.image-box {
-  margin-bottom: 15px;
+.image-box + .image-box {
+  margin-top: 1rem;
 }
 
 .image-box img {
-  max-width: 100%;
-  border-radius: 8px;
   display: block;
-  border: 2px solid #e0d6d1;
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--image-line);
+  border-radius: 8px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
 }
 
-/* Smooth scroll feel */
 .image-column::-webkit-scrollbar {
   width: 6px;
 }
+
 .image-column::-webkit-scrollbar-thumb {
   background: #cbbab2;
   border-radius: 3px;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  font-size: 0.5em;
-  color: #777;
-  margin: 20px 0;
-}
-
-p {
-  margin-bottom: 1em;
-}
-
-/* Remove the right column ONLY for the CV page */
+/* CV */
 .layout.cv-layout {
-  grid-template-columns: 220px 1fr; /* sidebar + main */
+  grid-template-columns: minmax(0, 1fr);
 }
 
-/* Make sure main uses all available space */
 .cv-page main {
-  grid-column: 2;
-  margin: 0;
+  width: 100%;
   max-width: none;
 }
 
-/* Hide right pane if it exists globally */
-.cv-page .image-column {
-  display: none !important;
-}
-
-/* CV bubble full width */
 .cv-bubble {
-  width: 100%;
-  max-width: 100%;
-  padding: 0.25in;
-  box-sizing: border-box;
+  padding: clamp(1rem, 2vw, 1.5rem);
 }
 
-/* PDF display */
 .cv-pdf {
   display: block;
   width: 100%;
-  height: 90vh;   /* big readable area */
-  border: none;
+  height: calc(100vh - var(--header-height) - 10rem);
+  min-height: 620px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.cv-bubble p {
+  margin-top: 1rem;
+}
+
+/* Alternate landing-page layout used by tester.html */
+.tester-layout .updates-column {
+  position: sticky;
+  top: calc(var(--header-height) + 1.5rem);
+  padding: 1.4rem;
+}
+
+.tester-layout .updates-column h2:not(:first-child) {
+  margin-top: 1.6rem;
+}
+
+.portrait {
+  float: right;
+  width: min(38%, 190px);
+  height: auto;
+  margin: 0 0 1rem 1.5rem;
+  padding: 5px;
+  border: 3px solid #7a5c35;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.18);
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #7a5c35;
+  background: #fcf8f0;
+  color: #4a3a2a;
+  font-style: italic;
+}
+
+footer {
+  margin-top: auto;
+  padding: 0 1rem 1.5rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .image-column {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .image-box + .image-box {
+    margin-top: 0;
+  }
+
+  .tester-layout .updates-column {
+    position: static;
+  }
+}
+
+@media (max-width: 620px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .site-header {
+    position: static;
+  }
+
+  .site-header-inner {
+    width: min(100% - 2rem, var(--content-width));
+    min-height: 0;
+    padding: 0.9rem 0 0.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.15rem;
+    overflow-x: auto;
+    padding-bottom: 0.15rem;
+  }
+
+  .site-nav a {
+    min-height: 40px;
+    padding: 0.35rem 0.65rem;
+    white-space: nowrap;
+  }
+
+  .layout {
+    width: min(100% - 1rem, var(--content-width));
+    padding: 1rem 0 2rem;
+    gap: 1rem;
+  }
+
+  .bubble {
+    padding: 1.25rem;
+    border-radius: 9px;
+  }
+
+  .image-column {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .portrait {
+    float: none;
+    display: block;
+    width: min(70%, 210px);
+    margin: 0 auto 1.25rem;
+  }
+
+  .cv-pdf {
+    min-height: 70vh;
+    height: 70vh;
+  }
+}
+
+@media print {
+  .site-header,
+  footer,
+  .image-column {
+    display: none;
+  }
+
+  body,
+  .bubble {
+    background: #fff;
+  }
+
+  .layout {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .bubble {
+    border: 0;
+    box-shadow: none;
+    break-inside: avoid;
+  }
 }

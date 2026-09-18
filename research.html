@@ -6,96 +6,240 @@ title: Research
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas Gagnon – Research</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .layout main {
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
+
+    .layout main .page-title {
+      font-size: 1.625rem;
+      font-weight: 700;
+    }
+
+    .layout main h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 620px) {
+      .layout main {
+        font-size: 1rem;
+      }
+    }
+
+    .image-box img {
+      border-color: var(--line);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    @media (max-width: 620px) {
+      .image-box img {
+        border-radius: 9px;
+      }
+    }
+
+    .image-rail-track {
+      display: contents;
+    }
+
+    @media (min-width: 861px) {
+      .image-column {
+        overflow: hidden;
+        overflow: clip;
+        overflow-anchor: none;
+      }
+
+      .image-rail-track {
+        display: flow-root;
+        will-change: transform;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="layout">
-
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <h1>Lucas Gagnon</h1>
-      <nav>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-title" href="index.html">Lucas Gagnon</a>
+      <nav class="site-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
+        <a href="research.html" aria-current="page">Research</a>
         <a href="teaching.html">Teaching</a>
         <a href="cv.html">CV</a>
       </nav>
-    </aside>
+    </div>
+  </header>
 
-    <!-- Main Content -->
+  <div class="layout">
     <main>
-        <div class="bubble">
-          <h2>Research Interests</h2>
-          <p>
-            My work investigates how counting problems structure algebraic varieties, cohomology rings, and representations.  
-            I enojy working in and around combinatorial representation theory, Schubert calculus, and quasisymmetric function theory.  
-            Expositions of each of these areas can be found <a href="https://arxiv.org/abs/math/9707221.pdf">here</a>, <a href="https://arxiv.org/abs/2506.21064">here</a>, and <a href="https://arxiv.org/abs/1810.07148">here</a>, respectively.
-          </p>
-          <p>
-            As a matter of practice my collaborators and I draw many pictures, especially arc diagrams.  
-          </p>
-          <p>
-            I also value mentoring undergraduate reserachers.  If you are an undergraduate looking for a project, get in touch!
-          </p>
-          <p>
-            Links: <a href="https://arxiv.org/a/gagnon_l_1.html">my papers on arXiv</a> and <a href="cv.html">a publication list in my CV</a>.
-          </p>
-        </div>
-        
-        <div class="bubble">
-          <h2>Macdonald theory</h2>
-          <p>Under construction.</p>
-        </div>
-        
-        <div class="bubble">
-          <h2>Quasisymmetry and Coxeter flag varieties</h2>
-          <p>
-            Symmetric polynomials have an outsized role across mathematics, and in particular in enumerative geometry and representation theory.    
-            Quasisymmetric polynomials are a (purely combinatorial) generalization of symmetric polynomials that have proved unreasonably effective in studying similar problems.  
-            My contributions show how quasisymmetry emerges naturally as the cohomology rings of certain algebraic varieties, and builds surprising connections to noncrossing partitions via toric geometry.  
-          </p>
-          <p>
-            This includes collaborations with <a href="https://bergeron.mathstats.yorku.ca/">Nantel Bergeron</a>, <a href="https://math.univ-lyon1.fr/~nadeau/">Philippe Nadeau</a>, <a href="https://www.math.utoronto.ca/hspink/">Hunter Spink</a>, and <a href="https://www.math.toronto.edu/vvtewari/">Vasu Tewari</a>.
-            <ol>
-              <li value="8">The Quasisymmetric Grassmannian (BGST). <br>  Preprint: <a href="https://arxiv.org/abs/2604.24903">arXiv:2604.24903</a>.</li>
-              <li value="7">The Coxeter Flag Variety (BGST). <br>  Preprint: <a href="https://arxiv.org/abs/2601.23111">arXiv:2601.23111</a>.</li>
-              <li value="6">The quasisymmetric flag variety: a toric complex on noncrossing partitions (BGNST). <br>  Preprint: <a href="https://arxiv.org/abs/2508.12171">arXiv:2508.12171</a>.</li>
-              <li value="5">Equivariant quasisymmetry and noncrossing partitions (BGNST). <br>  Preprint: <a href="https://arxiv.org/abs/2504.15234">arXiv:2504.15234</a>.</li>
-              <li value="4">The excedance quotient of the Bruhat order, Quasisymmetric Varieties and Temperley-Lieb algebras (BG). <br> Published in <a href="https://doi.org/10.1112/jlms.13007">JLMS</a>. <a href="https://arxiv.org/abs/2302.10814">arXiv:2302.10814</a>. FPSAC <a href="https://www.mat.univie.ac.at/~slc/wpapers/FPSAC2024/67.html">extended abstract</a> and <a href="https://fpsac2024.rub.de/public/submitted_posters/gagnon.pdf">poster</a>. </li>
-            </ol>
+      <section class="bubble">
+        <h1 class="page-title">Research Interests</h1>
+        <p>
+          My work investigates how counting problems structure objects in algebraic geometry and representation theory.
+          I enojy working in and around combinatorial representation theory, Schubert calculus, and quasisymmetric function theory.
+          Expositions of each of these areas can be found <a href="https://arxiv.org/abs/math/9707221.pdf">here</a>, <a href="https://arxiv.org/abs/2506.21064">here</a>, and <a href="https://arxiv.org/abs/1810.07148">here</a>, respectively.
         </p>
-        </div>
-        
-        <div class="bubble">
-          <h2>Unipotent combinatorics</h2>
-          <p>The basic problem in group representation theory is to classify irreducible representations.  
-            For the sylow p-subgroup $\mathrm{UT}_{n}(\mathbb{F}_{q})$ of the general linear group $\mathrm{GL}_{n}(\mathbb{F}_{q})$ over a finite field, solving this problem for complex representations is is certifiably "wild."  
-            This program seeks a combinatorial representation theory of all $\mathrm{UT}_{n}(\mathbb{F}_{q})$ without irreducibles.  
-            My contribution was to connect these combiantorics to Green's classical theory of $\mathrm{GL}_{n}(\mathbb{F}_{q})$ and Lustig's newer theory of unipotent representations.
-          </p>
-          <p>
-            <ol>
-              <li value="3">A unipotent realization of the chromatic quasisymmetric function. <br>  Published in <a href="https://doi.org/10.2140/ant.2024.18.1737">Algebra and Number Theory</a>. <a href="https://arxiv.org/abs/2211.06981">arXiv:2211.06981</a>. FPSAC <a href="https://www.mat.univie.ac.at/~slc/">extended abstract</a> and <a href="http://fpsac23.math.ucdavis.edu/schedule/slides/Poster%20session%202/21%20FPSAC.23.Gagnon.Poster.pdf">poster</a>.</li>
-              <li value="2">A GL-compatible Hopf algebra of unitriangular class functions. <br>  Published in <a href="https://doi.org/10.1016/j.jalgebra.2023.05.040">Journal of Algebra</a>. <a href="https://arxiv.org/abs/2211.05960">arXiv:2211.06981</a>.</li>
-              <li value="1">The combinatorics of normal subgroups in the unipotent upper triangular group. <br> Published in <a href="https://doi.org/10.5070/C61055381">Combinatorial Theory</a>. <a href="https://arxiv.org/abs/2012.00108">arXiv:2012.00108</a>.</li>
-            </ol>
-          </p>
-        </div>
+        <p>
+          As a matter of practice my collaborators and I draw many pictures, especially arc diagrams, a few of which are shown in the third pannel.
+        </p>
+        <p>
+          I also value mentoring undergraduate reserachers. If you are an undergraduate looking for a project, get in touch!
+        </p>
+        <p>
+          Links: <a href="https://arxiv.org/a/gagnon_l_1.html">my papers on arXiv</a> and <a href="cv.html">a publication list in my CV</a>.
+        </p>
+      </section>
+
+      <section class="bubble">
+        <h2>Macdonald theory</h2>
+        <p>Under construction.</p>
+      </section>
+
+      <section class="bubble">
+        <h2>Quasisymmetry and Coxeter flag varieties</h2>
+        <p>
+          Symmetric polynomials have an outsized role across mathematics, and in particular in enumerative geometry and representation theory.
+          Quasisymmetric polynomials are a (purely combinatorial) generalization of symmetric polynomials that have proved unreasonably effective in studying similar problems.
+          My contributions show how quasisymmetry emerges naturally as the cohomology rings of certain algebraic varieties, and builds surprising connections to noncrossing partitions via toric geometry.
+        </p>
+        <p>
+          This includes collaborations with <a href="https://bergeron.mathstats.yorku.ca/">Nantel Bergeron</a>, <a href="https://math.univ-lyon1.fr/~nadeau/">Philippe Nadeau</a>, <a href="https://www.math.utoronto.ca/hspink/">Hunter Spink</a>, and <a href="https://www.math.toronto.edu/vvtewari/">Vasu Tewari</a>.
+        </p>
+        <ol>
+          <li value="8"><b>The Quasisymmetric Grassmannian</b> (BGST). <br>Preprint: <a href="https://arxiv.org/abs/2604.24903">arXiv:2604.24903</a>.</li>
+          <li value="7"><b>The Coxeter Flag Variety</b> (BGST). <br>Preprint: <a href="https://arxiv.org/abs/2601.23111">arXiv:2601.23111</a>.</li>
+          <li value="6"><b>The quasisymmetric flag variety: a toric complex on noncrossing partitions</b> (BGNST). <br>Preprint: <a href="https://arxiv.org/abs/2508.12171">arXiv:2508.12171</a>.</li>
+          <li value="5"><b>Equivariant quasisymmetry and noncrossing partitions</b> (BGNST). <br>Preprint: <a href="https://arxiv.org/abs/2504.15234">arXiv:2504.15234</a>.</li>
+          <li value="4"><b>The excedance quotient of the Bruhat order, Quasisymmetric Varieties and Temperley-Lieb algebras</b> (BG). <br>Published in <a href="https://doi.org/10.1112/jlms.13007">JLMS</a>. <a href="https://arxiv.org/abs/2302.10814">arXiv:2302.10814</a>. FPSAC <a href="https://www.mat.univie.ac.at/~slc/wpapers/FPSAC2024/67.html">extended abstract</a> and <a href="https://fpsac2024.rub.de/public/submitted_posters/gagnon.pdf">poster</a>.</li>
+        </ol>
+      </section>
+
+      <section class="bubble">
+        <h2>Unipotent combinatorics</h2>
+        <p>
+          The basic problem in group representation theory is to classify irreducible representations.
+          For the sylow p-subgroup $\mathrm{UT}_{n}(\mathbb{F}_{q})$ of the general linear group $\mathrm{GL}_{n}(\mathbb{F}_{q})$ over a finite field, solving this problem for complex representations is is certifiably "wild."
+          This program seeks a combinatorial representation theory of all $\mathrm{UT}_{n}(\mathbb{F}_{q})$ without irreducibles.
+          My contribution was to connect these combiantorics to Green's classical theory of $\mathrm{GL}_{n}(\mathbb{F}_{q})$ and Lustig's newer theory of unipotent representations.
+        </p>
+        <ol>
+          <li value="3"><b>A unipotent realization of the chromatic quasisymmetric function</b>. <br>Published in <a href="https://doi.org/10.2140/ant.2024.18.1737">Algebra and Number Theory</a>. <a href="https://arxiv.org/abs/2211.06981">arXiv:2211.06981</a>. FPSAC <a href="https://www.mat.univie.ac.at/~slc/">extended abstract</a> and <a href="http://fpsac23.math.ucdavis.edu/schedule/slides/Poster%20session%202/21%20FPSAC.23.Gagnon.Poster.pdf">poster</a>.</li>
+          <li value="2"><b>A GL-compatible Hopf algebra of unitriangular class functions</b>. <br>Published in <a href="https://doi.org/10.1016/j.jalgebra.2023.05.040">Journal of Algebra</a>. <a href="https://arxiv.org/abs/2211.05960">arXiv:2211.06981</a>.</li>
+          <li value="1"><b>The combinatorics of normal subgroups in the unipotent upper triangular group</b>. <br>Published in <a href="https://doi.org/10.5070/C61055381">Combinatorial Theory</a>. <a href="https://arxiv.org/abs/2012.00108">arXiv:2012.00108</a>.</li>
+        </ol>
+      </section>
     </main>
 
-    <!-- Image Column -->
-    <aside class="image-column">
-      <div class="image-box"><img src="Images/IMG_0022.jpeg" alt="Resarch Blackboard 1"></div>
-      <div class="image-box"><img src="Images/IMG_0340.jpeg" alt="Resarch Blackboard 2"></div>
-      <div class="image-box"><img src="Images/IMG_0652.jpeg" alt="Resarch Blackboard 3"></div>
-      <div class="image-box"><img src="Images/IMG_1328.jpeg" alt="Resarch Blackboard 4"></div>
-      <div class="image-box"><img src="Images/IMG_0749.jpeg" alt="Resarch Blackboard 5"></div>
+    <aside class="image-column" aria-label="Research blackboard photographs">
+      <div class="image-rail-track">
+        <div class="image-box"><img src="Images/IMG_0022.jpeg" alt="Research blackboard 1" loading="lazy"></div>
+        <div class="image-box"><img src="Images/IMG_0340.jpeg" alt="Research blackboard 2" loading="lazy"></div>
+        <div class="image-box"><img src="Images/IMG_0652.jpeg" alt="Research blackboard 3" loading="lazy"></div>
+        <div class="image-box"><img src="Images/IMG_1328.jpeg" alt="Research blackboard 4" loading="lazy"></div>
+        <div class="image-box"><img src="Images/IMG_0749.jpeg" alt="Research blackboard 5" loading="lazy"></div>
+      </div>
     </aside>
   </div>
 
   <footer>
     <p>made with ChatGPT</p>
   </footer>
+  <script>
+    (() => {
+      const main = document.querySelector(".layout main");
+      const rail = document.querySelector(".image-column");
+      const track = rail?.querySelector(".image-rail-track");
+      const desktop = window.matchMedia("(min-width: 861px)");
+
+      if (!main || !rail || !track) return;
+
+      let frameRequested = false;
+      let needsMeasure = true;
+      let scrollStart = 0;
+      let mainTravel = 0;
+      let imageTravel = 0;
+      let lastOffset = null;
+
+      const measure = () => {
+        const mainRect = main.getBoundingClientRect();
+        const railHeight = rail.getBoundingClientRect().height;
+        const imageHeight = track.getBoundingClientRect().height;
+        const stickyTop = parseFloat(window.getComputedStyle(rail).top) || 0;
+        const mainTop = mainRect.top + window.scrollY;
+        const pageEnd = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+
+        scrollStart = Math.max(0, mainTop - stickyTop);
+        const scrollEnd = Math.min(pageEnd, mainTop + mainRect.height - stickyTop - railHeight);
+        mainTravel = Math.max(0, scrollEnd - scrollStart);
+        imageTravel = Math.max(0, imageHeight - railHeight);
+        needsMeasure = false;
+      };
+
+      const renderRail = () => {
+        frameRequested = false;
+
+        if (!desktop.matches) {
+          track.style.removeProperty("transform");
+          lastOffset = null;
+          return;
+        }
+
+        // Measure only when the layout changes, never on ordinary scroll frames.
+        if (needsMeasure) measure();
+        const progress = mainTravel > 0
+          ? Math.min(1, Math.max(0, (window.scrollY - scrollStart) / mainTravel))
+          : 0;
+        const offset = progress * imageTravel;
+
+        if (offset !== lastOffset) {
+          // Direct, fractional-pixel movement follows the page without easing lag.
+          track.style.transform = `translate3d(0, ${-offset}px, 0)`;
+          lastOffset = offset;
+        }
+      };
+
+      const requestRender = () => {
+        if (frameRequested) return;
+        frameRequested = true;
+        window.requestAnimationFrame(renderRail);
+      };
+
+      const invalidate = () => {
+        needsMeasure = true;
+        requestRender();
+      };
+
+      const images = track.querySelectorAll("img");
+      const prepareImages = () => {
+        // Load the whole desktop rail before its final height is measured.
+        if (desktop.matches) images.forEach((image) => { image.loading = "eager"; });
+        invalidate();
+      };
+
+      images.forEach((image) => {
+        image.addEventListener("load", invalidate);
+        image.addEventListener("error", invalidate);
+      });
+      window.addEventListener("scroll", requestRender, { passive: true });
+      window.addEventListener("resize", invalidate);
+      window.addEventListener("load", invalidate);
+      window.addEventListener("pageshow", invalidate);
+      desktop.addEventListener("change", prepareImages);
+
+      if ("ResizeObserver" in window) {
+        const observer = new ResizeObserver(invalidate);
+        observer.observe(main);
+        observer.observe(rail);
+        observer.observe(track);
+      }
+      if (document.fonts) document.fonts.ready.then(invalidate);
+
+      prepareImages();
+    })();
+  </script>
 </body>
 </html>
