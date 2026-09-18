@@ -38,8 +38,14 @@ body {
   font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
 }
 
-.bubble h1,
-.bubble h2,
+.bubble h1 {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+}
+
+.bubble h2 {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
+}
+
 .bubble h3 {
   font-family: Palatino, "Palatino Linotype", "Book Antiqua", serif;
 }
